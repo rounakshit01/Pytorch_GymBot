@@ -1,0 +1,211 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "Hello",
+        "Good morning",
+        "Good evening",
+        "Is anyone here?",
+        "Anyone available to help?"
+      ],
+      "responses": [
+        "Hello! Welcome to our gym.",
+        "Hi there, how can I assist you with your training?",
+        "Hey! Ready for a great workout?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Goodbye",
+        "See you later",
+        "I'm leaving",
+        "Bye",
+        "Catch you later"
+      ],
+      "responses": [
+        "Goodbye! Have a great workout!",
+        "Take care! See you next time.",
+        "Bye! Keep up the good work!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "Appreciate it",
+        "Thanks a lot",
+        "Much appreciated"
+      ],
+      "responses": [
+        "You're welcome! Keep pushing towards your goals!",
+        "Happy to help! Let's keep going!",
+        "No problem! Stay motivated!"
+      ]
+    },
+    {
+      "tag": "food_recommendations",
+      "patterns": [
+        "Can you suggest a diet based on body type?",
+        "What should I eat to gain weight?",
+        "What should I eat to lose weight?",
+        "Any diet suggestions for lean body?",
+        "What foods are good for muscle gain?"
+      ],
+      "responses": [
+        "For weight gain, include high-calorie foods like nuts, bananas, oats, rice, and peanut butter. Combine these with regular strength training.",
+        "For weight loss, focus on vegetables, lean protein sources (paneer, fish, eggs), and complex carbs like oats, brown rice, and whole grains.",
+        "If you're looking to build muscle, prioritize protein-rich foods like chicken, dal, paneer, Greek yogurt, and lentils along with a balanced intake of healthy fats and carbs.",
+        "To maintain a lean body, stick to a balanced diet of fruits, veggies, lean proteins, and healthy fats like avocado and olive oil."
+      ]
+    },
+    {
+      "tag": "fruit_recommendations",
+      "patterns": [
+        "What fruits are healthy?",
+        "Can you suggest some good fruits?",
+        "What fruits should I eat for weight loss?",
+        "Which fruits are high in energy?"
+      ],
+      "responses": [
+        "For energy, try bananas, apples, and oranges. They're packed with vitamins and quick energy.",
+        "Watermelon, papaya, and guava are great for hydration and low in calories, ideal for weight loss.",
+        "Mangoes, bananas, and dates are nutrient-dense and beneficial if you're aiming to gain weight or muscle mass.",
+        "Berries (like strawberries, blueberries) are great antioxidants and help in recovery after a workout."
+      ]
+    },
+    {
+      "tag": "ideal_weight",
+      "patterns": [
+        "What is the ideal weight for my height?",
+        "What should my weight be?",
+        "What weight should I maintain?",
+        "Tell me the ideal weight for men and women based on height"
+      ],
+      "responses": [
+        "For males, ideal weight (in kg) can be approximately calculated as Height (cm) - 100, with a range of +/- 5 kg. For example, a male 170 cm tall should ideally weigh between 65-75 kg.",
+        "For females, the ideal weight (in kg) is approximately Height (cm) - 105, with a range of +/- 5 kg. For example, a female 160 cm tall should ideally weigh between 50-60 kg.",
+        "Maintaining your weight within this range along with strength training and balanced nutrition is recommended for a healthy body."
+      ]
+    },
+    {
+      "tag": "classes",
+      "patterns": [
+        "What classes do you offer?",
+        "What workouts can I join?",
+        "Tell me about your classes",
+        "Do you have yoga classes?",
+        "Are there any group sessions?"
+      ],
+      "responses": [
+        "We offer yoga, HIIT, strength training, and Zumba classes.",
+        "You can join our yoga, strength, cardio, and Zumba sessions.",
+        "We have group classes for yoga, HIIT, and strength training."
+      ]
+    },
+    {
+      "tag": "membership",
+      "patterns": [
+        "How much is membership?",
+        "Do you have membership plans?",
+        "What are your membership fees?",
+        "How can I join?",
+        "Do you have monthly or yearly plans?"
+      ],
+      "responses": [
+        "We offer monthly, quarterly, and yearly membership plans. Monthly is ₹1200, quarterly is ₹3000, and yearly is ₹10,000.",
+        "You can choose from various membership options: monthly, quarterly, or yearly.",
+        "For more details, you can contact the front desk!"
+      ]
+    },
+    {
+      "tag": "trainers",
+      "patterns": [
+        "Do you have personal trainers?",
+        "Can I get a personal trainer?",
+        "Who are your trainers?",
+        "Do you offer trainer sessions?",
+        "Is there a trainer available?"
+      ],
+      "responses": [
+        "Yes, we have certified personal trainers available!",
+        "Our trainers can help you with personalized workout and diet plans.",
+        "Trainer sessions are available for an additional fee."
+      ]
+    },
+    {
+      "tag": "equipment",
+      "patterns": [
+        "What equipment do you have?",
+        "Do you have free weights?",
+        "Is there a squat rack?",
+        "What kind of machines are available?",
+        "Do you have cardio machines?"
+      ],
+      "responses": [
+        "We have a wide range of equipment, including free weights, squat racks, and cardio machines.",
+        "Our gym is equipped with treadmills, ellipticals, and strength machines.",
+        "Yes, we have everything you need for strength and cardio training!"
+      ]
+    },
+    {
+      "tag": "payment_methods",
+      "patterns": [
+        "What payment methods do you accept?",
+        "Can I pay by credit card?",
+        "Do you accept UPI?",
+        "Is cash payment accepted?"
+      ],
+      "responses": [
+        "We accept cash, credit/debit cards, and UPI payments.",
+        "Yes, you can pay with cash, card, or through UPI."
+      ]
+    },
+    {
+      "tag": "session_times",
+      "patterns": [
+        "What are your session times?",
+        "When are the classes?",
+        "Do you have morning and evening classes?",
+        "Is there a night session?"
+      ],
+      "responses": [
+        "We have morning sessions from 6 AM to 10 AM, evening sessions from 5 PM to 9 PM, and some night classes from 8 PM to 10 PM.",
+        "You can join sessions in the morning, evening, or night based on your preference.",
+        "For specific class timings, please check with the front desk."
+      ]
+    },
+    {
+      "tag": "opening_hours",
+      "patterns": [
+        "What are your opening hours?",
+        "When do you open?",
+        "What's the gym schedule?",
+        "Are you open on Sunday?",
+        "What are the hours on weekends?"
+      ],
+      "responses": [
+        "We are open Monday to Saturday from 6 AM to 10 PM, and on Sundays from 8 AM to 4 PM.",
+        "Our gym hours are Monday to Saturday 6 AM to 10 PM and Sunday 8 AM to 4 PM."
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Know any gym jokes?",
+        "Say something funny",
+        "Make me laugh"
+      ],
+      "responses": [
+        "Why don’t some couples go to the gym? Because some relationships don’t work out.",
+        "I told my trainer I wanted to work out. He said, 'Work out where?'"
+      ]
+    }
+  ]
+}
+
