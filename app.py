@@ -1,15 +1,9 @@
 from flask import Flask, render_template, request, jsonify
-from flask_cors import CORS  # Import CORS
 import torch
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
 import json
 import random  # Added import for random choice
-import os
-
-# Enable CORS for all routes
-app = Flask(__name__)
-CORS(app)  # This will enable CORS for all routes by default
 
 # Load intents and trained model
 with open("intents.json", "r") as json_data:
@@ -28,6 +22,8 @@ model_state = data["model_state"]
 model = NeuralNet(input_size, hidden_size, output_size)
 model.load_state_dict(model_state)
 model.eval()
+
+app = Flask(__name__)
 
 # Homepage route
 @app.route("/")
@@ -63,6 +59,4 @@ def chat():
     return jsonify({"reply": "I'm sorry, I didn't understand that."})  # Match the key with JS code
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))  # Default to 5000 if PORT is not set
-    app.run(host="0.0.0.0", port=port, debug=True)
-
+    app.run(debug=True)
