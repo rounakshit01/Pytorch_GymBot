@@ -4,7 +4,10 @@ from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
 import json
 import random  # Added import for random choice
+from flask_cors import CORS
+app = Flask(__name__)
 
+CORS(app)
 # Load intents and trained model
 with open("intents.json", "r") as json_data:
     intents = json.load(json_data)
@@ -23,7 +26,7 @@ model = NeuralNet(input_size, hidden_size, output_size)
 model.load_state_dict(model_state)
 model.eval()
 
-app = Flask(__name__)
+
 
 # Homepage route
 @app.route("/")
