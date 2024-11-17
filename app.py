@@ -62,4 +62,6 @@ def chat():
     return jsonify({"reply": "I'm sorry, I didn't understand that."})  # Match the key with JS code
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    import os
+    port = int(os.environ.get("PORT", 5000))  # Allow dynamic port binding for deployment
+    app.run(host="0.0.0.0", port=port, debug=True)
